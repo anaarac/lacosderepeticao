@@ -39,11 +39,25 @@
         }
     </script>-->
 
-    <script>
+    <!--<script>
         let numero, sequencia;
         numero = parseInt(prompt("Digite um número para visualizar a sequencia de Fibonacci"))
         for(;numero>=sequencia;numero += sequencia){
         alert (sequencia)
+        }
+    </script>-->
+
+    <script>
+        let contador, proximo, atual, anterior;
+        contador = parseInt(prompt("Digite um número:"))
+        atual = 1;
+        anterior = 0;
+
+        for (i = 0; i <= contador; i++){
+            proximo = atual+anterior;
+            alert(proximo);
+            anterior = atual;
+            atual = proximo;
         }
     </script>
     
