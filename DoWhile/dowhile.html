@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do While</title>
+</head>
+<body>
+   <!--Professor <script>
+        let anterior, atual, proximo, contador, inicio;
+        anterior = 0;
+        atual = 0;
+        proximo = 0;
+        contador = parseInt(prompt("Digite quantas vezes deseja fazer a contagem de Fibonacci: "))
+        inicio = 1;
+
+        do {
+            alert(proximo)
+            proximo = atual + anterior
+            anterior = atual
+            atual = proximo
+            contador ++
+        } while (contador <= inicio)
+        alert ("Finalizamos ;) ")
+    </script>-->
+
+    <!--<script>
+           let numero, a, b, i, resultado, proximo;
+        numero = parseInt(prompt("Digite um número para visualizar a sequencia de Fibonacci"))
+        a = 0;
+        b = 1;
+        i = 0;
+        resultado = "Sequência de Fibonacci: \n";
+
+        do {
+            resultado += a;
+            proximo = a + b;
+            a = b;
+            b = proximo;
+            i++;
+
+        }while (i < numero) ;
+        alert(resultado);
+        </script>-->
+    
+    <!--<script>
+        let numero, resultado, continuar;
+        do {
+            numero = parseInt(prompt("Digite um número"));
+            resultado= numero % 2
+            if (resultado == 0) { alert("Você digitou um número par") }
+            else { alert("Você digitou um número ímpar")}
+            continuar = (prompt("Digite S para continua"))
+        } while (continuar == "S" || continuar == "s")
+    </script>-->
+
+    <!--<script>
+        let tabuada, i, condicao;
+        condicao = parseInt(prompt("Digite S se deseja iniciar a tabuada: "))
+
+        do{
+            tabuada = parseInt(prompt("Digite um número:"))
+            i=0;
+        
+        do{
+            i++;
+            alert(tabuada + "x" + i + "=" + (tabuada * i))
+            
+        } while (i<9)
+        condicao = prompt ("Deseja continuar a tabuada? \n Digite S para sim e N para não:");
+        } while (condicao == "S" || condicao == "s");
+        alert ("Programa encerrado!")
+    </script>-->
+
+<script>
+    let n1, n2, operador, resultado, condicao;
+    do {
+        n1 = parseInt (prompt("Insira o primeiro número: "))
+        n2 = parseInt (prompt ("Digite o segundo número: "))
+        operador = prompt( "Escolha o tipo de operação: ")
+    if (operador == "+"){
+        resultado = n1+n2
+        alert (resultado)
+    } else if (operador == "-"){
+        resultado = n1-n2
+        alert (resultado)
+    } else if (operador == "x"){
+        resultado = n1*n2
+        alert (resultado)
+    } else if (operador == "/"){
+        resultado = n1/n2
+        alert (resultado)
+    } else {
+        alert ("Voc~e digitou um valor inválido!")
+    }
+    } while (condicao);
+    alert("Digite S se deseja continuar ou F para finalizar")
+</script>
+</body>
+</html>
