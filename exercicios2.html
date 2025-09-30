@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios</title>
 </head>
+
 <body>
-    <script>
+    <!--<script>
         /* Faça um programa onde o usuário entre com dois números e 
         possa escolher qual das operações matemáticas irá ser realizada. 
         Após a realização do calculo o programa devera perguntar se o 
         usuário deseja realizar outro calculo, até quando o usuário quiser 
         encerrar o programa. */
 
-        let 
-    </script>
+        let condicao, operador, n1, n2;
+        condicao = prompt ("Digite S para iniciar a calculadora:");
+
+        while (condicao == "S" || condicao == "s") {
+            operador = prompt("Digite o operador matemático: "+
+            "\n +. adição"+
+            "\n -. subtração"+
+            "\n x. multiplicação"+
+            "\n /. divisão"+
+            "\n %. resto da divisão"
+        )
+        
+        n1 = parseInt(prompt("Digite o primeiro número da operação: "))
+        n2 = parseInt(prompt("Digite o segundo número da operação"))
+        
+        while(operador == "+"){
+            alert(n1+n2)
+            operador = "";
+        }        
+        while(operador == "-"){
+            alert(n1-n2)
+            operador = "";
+        }
+        while(operador == "x"){
+            alert(n1*n2)
+            operador = "";
+        }
+        while(operador == "/"){
+            alert(n1/n2)
+            operador = "";
+        }
+        while(operador == "%"){
+            alert(n1%n2)
+            operador = "";
+        }
+        condicao=prompt("Deseja continuar o cálculo? \n Digite S para sim ou N para não: ")
+            while(condicao == "N" || condicao == "n") {
+                alert ("Calculadora encerrada!")
+        }
+        
+            }
+    </script> -->
 
     <!--<script>
         /* Faça um programa onde o usuário entre com dois números e possa 
         escolher qual das operações matemáticas irá ser realizada. 
         Após a realização do calculo o programa devera perguntar se o usuário 
         deseja realizar outro calculo, até quando o usuário quiser encerrar o programa. */
+
+        let num, resultado;
+        num = parseInt(prompt("Digite um número: "))
+        resultado = (num % 2);
+
+        while (resultado == 0) {
+            alert(+num+ " é par.")
+            break;
+        }
+
+        while (resultado !=0) {
+            alert(+num+ " é impar.")
+            break;
+        }
     
     </script>-->
 
@@ -30,6 +86,23 @@
         Fibonacci. (1,1,2,3,5,8,13,21...) , em seguida o programa devera 
         perguntar se o usuário deseja repetir o processo.*/
 
+        let numero, a, b, i, resultado, proximo;
+        numero = parseInt(prompt("Digite um número para visualizar a sequencia de Fibonacci"))
+        a = 0;
+        b = 1;
+        i = 0;
+        resultado = "Sequência de Fibonacci: \n";
+
+        while (i < numero) {
+            resultado += a;
+            proximo = a + b;
+            a = b;
+            b = proximo;
+            i++;
+
+        }
+        alert(resultado);
+
     </script>-->
 
     <!--<script>
@@ -37,6 +110,20 @@
         e faça até a tabuada do 9, em seguida o programa devera perguntar
         se o usuário deseja repetir o processo.*/
 
+        let tabuada, i, condicao;
+        condicao = prompt("Digite S para iniciar a tabuada: ")
+        while (condicao == "S" || condicao == "s") {
+            tabuada = parseInt(prompt("Digite o número que deseja visualizar a tabuada"))
+            i = 0
+
+            while (i < 9) {
+                i++;
+                alert(tabuada + "x" + i + "=" + (tabuada * i))
+            }
+            condicao = prompt("Deseja continuar o cálculo? \n Digite S para sim ou N para não: ")
+        }
+            alert("Tabuada encerrada!")
     </script>-->
 </body>
+
 </html>
