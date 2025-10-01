@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Peça dois números e mostre qual é o maior.
+
+        let n1, n2;
+        n1 = prompt("Digite um número: ")
+        n2 = prompt("Digite outro número, diferente do anterior: ")
+
+        if (isNaN(n1) || isNaN(n2)) {
+            alert("Erro: Entrada inválida. Por favor, digite um número.");
+        } else {
+            if (n1 > n2) {
+                alert("O número " +n1+ " é maior que " +n2)
+            } else {
+                alert("O número " +n2+ " é maior que " +n1)
+            }
+        }
+        
+
+    </script>
+</body>
+</html>

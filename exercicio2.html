@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //Receba um número inteiro e diga se é par ou ímpar.
+
+        let entrada, numero, mensagem;
+        entrada = prompt("Digite um número inteiro:");
+        numero = parseInt(entrada);
+        
+        if (isNaN(numero)) {
+            mensagem = "Erro: Entrada inválida. Por favor, digite um número.";
+        } else {
+            if (numero % 2 === 0) {
+                mensagem = `O número ${numero} é PAR.`;
+            } else {
+                mensagem = `O número ${numero} é ÍMPAR.`;
+            }
+        }
+        alert(mensagem);
+    </script>
+</body>
+</html>
