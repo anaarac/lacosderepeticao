@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Calcule a média de três notas e informe se o aluno foi aprovado (média ≥ 7),
+        //recuperação (média ≥ 5) ou reprovado.
+
+        let media, n1, n2, n3;
+        n1 = parseFloat(prompt ("Digite a sua primeira nota de avaliação: "));
+        n2 = parseFloat(prompt ("Digite a sua segunda nota de avaliação:"));
+        n3 = parseFloat(prompt ("Digite a sua terceira nota de avaliação:"));
+        media = (n1 + n2 + n3) / 3;
+
+        if (media >= 7){
+            alert("Você foi aprovado, parabéns!");
+        } else if (media >= 5 || media == 6){
+            alert("Você ficou de recuperação, já vamos iniciar os estudos para melhorar!");
+        } else {
+            alert("Reprovado!")
+        }
+
+    </script>
+</body>
+</html>
