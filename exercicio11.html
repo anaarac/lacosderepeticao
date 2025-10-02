@@ -10,7 +10,16 @@
 
         //Faça uma contagem regressiva de um número até zero.
 
-        let contagem;
+        let i, contagem;
+        contagem = parseInt(prompt("Digite um número para contagem regressiva: "));
+
+        if (isNaN(contagem) || contagem < 0) {
+            alert ("Você não digitou um número válido!")
+        } else {
+            for (let i = contagem; i >= 0; i--) {
+                alert(i);
+            }
+        }
 
     </script>
 </body>
